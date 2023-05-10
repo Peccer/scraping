@@ -31,6 +31,9 @@ import time
 
 review_data = []
 
+# Website to be scraped from trustpilot. Make sure to double check if the value matches the actual trustpilot url
+website_scrape = "catawiki.com"
+
 # Set Trustpilot page numbers to scrape here
 from_page = 1
 to_page = 100
@@ -41,10 +44,10 @@ delay = 3
 for i in range(from_page, to_page + 1):
     # print(i)
     if i == 1:
-        url = "https://nl.trustpilot.com/review/catawiki.com?languages=all&sort=recency"
+        url = f"https://nl.trustpilot.com/review/{website_scrape}?languages=all&sort=recency"
     else:
         i = str(i)
-        url = f"https://nl.trustpilot.com/review/catawiki.com?date=last6months&languages=all&page={i}&sort=recency"
+        url = f"https://nl.trustpilot.com/review/{website_scrape}?date=last6months&languages=all&page={i}&sort=recency"
     
     # print(url)
     
