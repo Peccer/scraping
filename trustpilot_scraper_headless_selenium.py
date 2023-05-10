@@ -1,4 +1,4 @@
-# Scraping Trustpilot reviews in Deepnote, with Selenium
+# Scraping Trustpilot reviews with Selenium, in Deepnote (deepnote.com, my favourite data analysis virtual notebook platform
 !pip install selenium==4.9.0
 
 from selenium.common.exceptions import NoSuchElementException
