@@ -21,7 +21,7 @@ options.add_argument("disable-infobars")
 options.add_argument("--disable-extensions")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--no-sandbox")
-driver = Chrome(options=options)
+browser = Chrome(options=options)
 
 import pandas as pd
 import datetime as dt
@@ -38,7 +38,6 @@ website_scrape = "catawiki.com"
 from_page = 1
 to_page = 100
 
-browser = driver
 delay = 3
 
 for i in range(from_page, to_page + 1):
